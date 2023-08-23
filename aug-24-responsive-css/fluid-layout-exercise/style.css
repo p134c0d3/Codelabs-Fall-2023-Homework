@@ -1,0 +1,30 @@
+body {
+  background-color: darkblue;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header {
+  background-color: fuchsia;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.nav-links {
+  display: inline;
+}
+
+.footer {
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.copyright-notice {
+  /* margin-left: 10px; */
+  text-align: center;
+  font-size: 12px;
+}
