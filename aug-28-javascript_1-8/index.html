@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Getting started with JavaScript</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+			crossorigin="anonymous"
+		/>
 
-  <style>
-    body {
-      padding: 30px;
-    }
-  </style>
-  <title>Getting started with JavaScript</title>
-</head>
-<body>
-  <div class="jumbotron text-center">
-    <h1>This is my site.</h1>
+		<style>
+			body {
+				padding: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Start JavaScript -->
+		<script>
+			// strings
+			"this is my string";
+			"my second string";
+			"my name is John";
 
-    <button type="button" class="btn btn-primary" onclick="changeText()">Change the text!</button>
-  </div>
+			//numbers
+			10.0;
+			500.0;
+			3.14;
 
-  <!-- Start JavaScript -->
-  <script>
-    const header = document.querySelector('h1')
+			// booleans (truthy or falsy);
+			true;
+			false;
 
-    function changeText() {
-      header.innerText = "My new text!"
-    }
-  </script>
-</body>
+			// console.log(Boolean(''));
+
+			// specials
+			undefined;
+			null;
+			NaN;
+
+			// objects
+			const user = {
+				name: "John",
+				username: "p134c0d3",
+			};
+
+			// array
+			const users = ["john", "jerry", "holly"];
+
+			const luckyNumbers = [1, 43, 54, 132];
+			const whatever = ["john", 1, "holly"];
+
+			const superUsers = [
+				{ name: "John" },
+				{ name: "Chris" },
+				{ name: "Holly" },
+			];
+
+			// console.log(superUsers[2].name);
+
+			// declaring variables
+			var thing         = "first"; // EC5 - old way, don't use
+			const otherThing  = "second";
+			let newThing      = "third";
+
+      newThing = 'new string';
+
+      let myVariable;
+
+      myVariable = 'something';
+		</script>
+	</body>
 </html>
