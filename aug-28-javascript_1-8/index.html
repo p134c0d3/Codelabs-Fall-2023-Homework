@@ -20,57 +20,40 @@
 	<body>
 		<!-- Start JavaScript -->
 		<script>
-			// strings
-			"this is my string";
-			"my second string";
-			"my name is John";
+			let a = 10,
+			   b = 3,
+			   c = 15;
+      let d = '5',
+        e = 'my name',
+        f = 'is john';
 
-			//numbers
-			10.0;
-			500.0;
-			3.14;
+        console.groupCollapsed('Addition');
+        console.log(a - b);
+        console.log(a + c);
 
-			// booleans (truthy or falsy);
-			true;
-			false;
+        console.log(e + ' ' + f);
+        console.log(a + d);
+        console.log(e + ' is batman');
+        console.groupEnd();
 
-			// console.log(Boolean(''));
+        console.groupCollapsed('Multiplication');
+        console.log(a * 3)
+        console.log(a * b)
+        console.log(c * b)
+        console.groupEnd();
 
-			// specials
-			undefined;
-			null;
-			NaN;
-
-			// objects
-			const user = {
-				name: "John",
-				username: "p134c0d3",
-			};
-
-			// array
-			const users = ["john", "jerry", "holly"];
-
-			const luckyNumbers = [1, 43, 54, 132];
-			const whatever = ["john", 1, "holly"];
-
-			const superUsers = [
-				{ name: "John" },
-				{ name: "Chris" },
-				{ name: "Holly" },
-			];
-
-			// console.log(superUsers[2].name);
-
-			// declaring variables
-			var thing         = "first"; // EC5 - old way, don't use
-			const otherThing  = "second";
-			let newThing      = "third";
-
-      newThing = 'new string';
-
-      let myVariable;
-
-      myVariable = 'something';
+        console.group('Incrementing');
+        a++;
+        ++a;
+        b--;
+        --b;
+        c += a;
+        e += e;
+        console.log(a+1);
+        console.log(a++); 
+        console.log(c += a);
+        console.log(e);
+        console.groupEnd();
 		</script>
 	</body>
 </html>
