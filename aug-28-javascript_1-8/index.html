@@ -18,60 +18,76 @@
 		</style>
 	</head>
 	<body>
+		<div class="dogs-list"></div>
 		<!-- Start JavaScript -->
 		<script>
-			// Comparisons
-      // strings
-      
+			// const name = prompt('What is your name?');
+			const username = "chrisoncode";
 
-      console.groupCollapsed('String');
-      const original = 'john';
-      const clone = 'JOHN';console.log(original == 'john'); // true
-      console.log(original == clone); // false
-      console.log(original == clone.toLowerCase());
-      console.groupEnd();
+			/////////////////// if statement
 
-      console.groupCollapsed('Numbers');
-      const num1 = 10;
-      const num2 = '10';
-      console.log(num1 == num2); // Coercion - true
-      console.log(num1 === num2); // no Coercion - false
-      console.log(num1 != num2); // false
-      console.log(num1 !== num2); // true
-      console.groupEnd();
+			// if (name == 'nick' || name == 'chris') {
+			//   alert('Hello!');
+			// } else if (name == 'Holly') {
+			//   console.log('this is holly');
+			// } else {
+			//   console.log('Not Nick');
+			// }
+
+			/////////////////// for loop
+			const dogsList = document.querySelector(".dogs-list");
+			const dogs = [
+				{ name: "bruce", type: "chihuahua" },
+				{ name: "chance", type: "bernese" },
+			];
+
+			// for (let i = 0; i < dogs.length; i++) {
+			//   // grab the dog
+			//   const dog = dogs[i];
+
+			//   const dogData = document.createElement('div');
+			//   dogData.classList.add('jumbotron', 'text-center')
+			//   dogData.innerText = `${dog.name} is a ${dog.type}.`;
+			//   dogsList.appendChild(dogData);
+			// }
+
+			/////////////////// while loop
+			// let i = 0;
+			// while (i < dogs.length) {
+			// 	// grab the dog
+			// 	const dog = dogs[i];
+
+			// 	const dogData = document.createElement("div");
+			// 	dogData.classList.add("jumbotron", "text-center");
+			// 	dogData.innerText = `${dog.name} is a ${dog.type}.`;
+			// 	dogsList.appendChild(dogData);
+			// 	i++;
+			// }
+
+			/////////////////// do while loop
+
+			// let i = 0
+
+			// do {
+			//   // grab the dog
+			// const dog = dogs[i];
+
+			// const dogData = document.createElement('div');
+			// dogData.classList.add('jumbotron', 'text-center')
+			// dogData.innerText = `${dog.name} is a ${dog.type}.`;
+			// dogsList.appendChild(dogData);
+			// } while (i < dogs.length);
+
+			/////////////////// for...of iterator
+      for (let dog of dogs) {
+
+			const dogData = document.createElement('div');
+			dogData.classList.add('jumbotron', 'text-center')
+			dogData.innerText = `${dog.name} is a ${dog.type}.`;
+			dogsList.appendChild(dogData);
+      }
 
 
-      console.groupCollapsed('Booleans');
-      let what; // undefined
-      let thing = null; // null
-
-      console.log(Boolean(what)); // false
-      console.log(Boolean(thing)); // false
-      console.log(Boolean(num1)); // true
-      console.log(Boolean(num2)); // true
-      console.log(Boolean({})); //true - empty object
-      console.log(Boolean([])); //true - empty array
-
-      console.groupEnd();
-
-      const firstArr = [1, 2, 3];
-      const secondArr = [1, 2, 3];
-      const firstObj = { color: 'red'};
-      const secondObj = { color: 'red'};
-
-      console.groupCollapsed('Objects and Arrays');
-      console.log(firstArr == secondArr); // false
-      console.log(firstObj == secondObj); // false
-      
-      console.groupEnd();
-
-      console.groupCollapsed('And Or');
-      console.log(Boolean('blah') && Boolean('thing')); // true - both have to be true with &&
-      console.log(Boolean('blah') && Boolean('')); // false - both have to be true with &&
-      console.log(Boolean('blah') || Boolean('')); // true - only one has to be true with ||
-      console.log(Boolean('') || Boolean('')); // false - one has to be true with ||
-
-      console.groupEnd();
 		</script>
 	</body>
 </html>
