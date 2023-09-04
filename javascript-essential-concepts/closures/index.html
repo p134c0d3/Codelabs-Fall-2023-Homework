@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Closures</h1>
+  <script>
+
+    // let myName = 'Kyle';
+
+    // function printName() {
+    //   console.log(myName);
+    // }
+
+    // myName = 'Joey';
+
+    // printName();
+
+    // myName = 'Kate'
+
+    // printName();
+
+
+
+
+    // function outerFunction(outerVariable) {
+    //   const outer2 = 'Hi'
+    //   return function innerFunction(innerVariable) {
+    //     console.log(`Outer Variable: ${outerVariable}`);
+    //     console.log(`Inner Variable: ${innerVariable}`);
+    //     console.log(outer2);
+    //   }
+    // }
+    
+    // const newFunction = outerFunction('outside'); // sets the parameter for outer function to a variable
+    // newFunction('inside'); // sets the parameter for inner function since outer function was resolved by setting it to a variable
+    
+    
+    
+    function outerFunction(url) {
+      fetch('url').then(() => {
+        console.log(url);
+      })
+    }
+
+  </script>
+</body>
+</html>
